@@ -155,6 +155,10 @@
             <defaultValue>false</defaultValue>
         </requiredProperty>
 
+        <requiredProperty key="dependOpC" name="OpC" type="dependency" description="OpC library" url="https://github.com/ThisKarolGajda/OpC" scope="shaded">
+            <defaultValue>false</defaultValue>
+        </requiredProperty>
+
         </requiredProperties>
 
     <fileSets>

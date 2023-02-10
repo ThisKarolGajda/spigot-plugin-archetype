@@ -13,7 +13,7 @@
 #if (${dependJeffLib} == "true" or ${dependMorePersistentDataTypes} == "true" or ${dependCustomBlockData} == "true" or ${dependSpigotUpdateChecker} == "true")
 #set ($addJeffMediaRepo = "true")
 #end
-#if (${dependVault} == "true")
+#if (${dependVault} == "true" or ${dependOpC})
 #set ($addJitpackRepo = "true")
 #end
 #if(${dependACF} == "true" or ${dependTaskChain} == "true")
@@ -404,6 +404,14 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
             <version>${dollar}{kotlinVersion}</version>
+            <scope>compile</scope>
+        </dependency>
+#end
+#if(${dependOpC} == "true")
+        <dependency>
+            <groupId>com.github.ThisKarolGajda</groupId>
+            <artifactId>OpC</artifactId>
+            <version>master-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 #end
