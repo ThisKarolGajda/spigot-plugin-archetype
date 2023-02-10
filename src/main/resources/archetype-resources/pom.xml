@@ -75,13 +75,9 @@
 #set ($addPaperRepo = "true")
 #end
 
-
     <modelVersion>4.0.0</modelVersion>
 
     <name>${pluginName}</name>
-    <groupId>${groupId}</groupId>
-    <artifactId>${artifactId}</artifactId>
-    <version>${version}</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -91,7 +87,7 @@
         <kotlinVersion>1.8.0</kotlinVersion>
 #end
         <testServerPath>${pathToTestServer}</testServerPath>
-        <shadedPackage>${package}.shaded</shadedPackage>
+        <shadedPackage>${groupId}.${artifactId}.shaded</shadedPackage>
 
         <!-- Do not change the following properties -->
         <outputDirectory>target</outputDirectory>

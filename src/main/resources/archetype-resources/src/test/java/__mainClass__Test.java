@@ -1,11 +1,12 @@
 #set ($zero = 0)
 #set ($majorVersion = $zero.parseInt($spigotVersion.split('\.')[0]))
 #set ($minorVersion = $zero.parseInt($spigotVersion.split('\.')[1]))
-package ${package};
+
+package ${groupId}.${artifactId};
 
 import be.seeseemelk.mockbukkit.MockBukkit;
 import be.seeseemelk.mockbukkit.ServerMock;
-import ${package}.${mainClass};
+import ${groupId}.${artifactId}.${mainClass};
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

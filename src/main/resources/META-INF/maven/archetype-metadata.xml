@@ -11,32 +11,12 @@
         </requiredProperty>
 
         <requiredProperty key="author" name="Author" type="text" separator="true"> <!-- readme -->
-            <defaultValue>Joe Mama</defaultValue>
+            <defaultValue>OpKarol</defaultValue>
         </requiredProperty>
 
         <!--  Separator  -->
 
-        <requiredProperty key="groupId" name="Group ID" type="text">
-            <defaultValue>org.example</defaultValue>
-        </requiredProperty>
-
-        <requiredProperty key="artifactId" name="Artifact ID" type="text">
-            <defaultValue>my-plugin</defaultValue>
-            <!--            <validationRegex>[a-z][a-z0-9-]*</validationRegex>-->
-        </requiredProperty>
-
-        <requiredProperty key="version" name="Version" type="text" separator="true">
-            <defaultValue>1.0-SNAPSHOT</defaultValue>
-            <!--            <validationRegex>[0-9]+(\.[0-9]+)*(-[a-zA-Z0-9]+)?</validationRegex>-->
-        </requiredProperty>
-
-        <!--  Separator  -->
-
-        <requiredProperty key="package" name="Package" type="text"> <!-- readme -->
-            <defaultValue>com.example.myplugin</defaultValue>
-        </requiredProperty>
-
-        <requiredProperty key="mainClass" name="Main Class" type="text" separator="true"> <!-- readme -->
+        <requiredProperty key="mainClass" name="PluginStarter" type="text" separator="true"> <!-- readme -->
             <defaultValue>MyPlugin</defaultValue>
             <validationRegex>([\p{L}_$][\p{L}\p{N}_$]*\.)*[\p{L}_$][\p{L}\p{N}_$]*</validationRegex>
         </requiredProperty>
@@ -52,15 +32,15 @@
         </requiredProperty>
 
         <requiredProperty key="javaVersion" name="Java Version" type="text"> <!-- readme -->
-            <defaultValue>8</defaultValue>
+            <defaultValue>17</defaultValue>
         </requiredProperty>
 
-        <requiredProperty key="pathToTestServer" name="Path to Test Server" type="text"> <!-- readme -->
-            <defaultValue>C:\mctest\plugins</defaultValue>
+        <requiredProperty key="pathToTestServer" name="Path to Test Server Plugins directory" type="text"> <!-- readme -->
+            <defaultValue>E:\Servers\1.19.3\plugins</defaultValue>
         </requiredProperty>
 
         <requiredProperty key="addStaticGetter" name="Add static getter to main class" type="checkbox"> <!-- readme -->
-            <defaultValue>false</defaultValue>
+            <defaultValue>true</defaultValue>
         </requiredProperty>
 
         <requiredProperty key="useKotlin" name="Use Kotlin instead of Java" type="checkbox"> <!-- readme -->
@@ -187,7 +167,7 @@
             </includes>
         </fileSet>
         <fileSet encoding="UTF-8" filtered="false">
-            <directory></directory>
+            <directory/>
             <includes>
                 <include>.gitignore</include>
             </includes>

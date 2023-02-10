@@ -4,7 +4,7 @@
 #end
 name: ${pluginName}
 version: ${project.version}
-main: ${package}.${mainClass}
+main: ${groupId}.${artifactId}.${mainClass}
 author: ${author}
 api-version: "1.13"
 load: POSTWORLD
